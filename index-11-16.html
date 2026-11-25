@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        thead td {
+            text-align: center;
+        }
+        thead th {
+            width: 150px;
+        }
+        thead .aaaa{width: 100px;}
+        table{
+            border-collapse: collapse;
+        }
+        thead th:nth-child(7){
+            width: 300px;
+        }
+    </style>
+    <table border="1">
+        <caption>時間割</caption>
+        <!-- 行の見出し -->
+        <thead>
+            <th class="aaaa"></th>
+            <th>月</th>
+            <th>火</th>
+            <th>水</th>
+            <th>木</th>
+            <th>金</th>
+            <th>備考</th>
+
+        </thead>
+
+        <tbody>
+            <!-- 時間割の本体 -->
+            <tr>
+                <th>1コマ目</th>
+                <td>HTML/CSS </td>
+                <td>画像編集制作実習 </td>
+                <td>Webフロント技術 </td>
+                <td rowspan="2">ウェブデザイン技能検定対策Ⅰ</td>
+                <td>クリエイティブ企画 </td>
+                <td rowspan="4"></td>
+            </tr>
+            <tr>
+                <th>2コマ目</th>
+                <td>ポートフォリオ</td>
+                <td>UI/UXデザイン基礎</td>
+                <td>MOS対策</td>
+                <!-- <td>ウェブデザイン技能検定対策Ⅰ</td> -->
+                <td>キャリアプラン</td>
+                <!-- <td></td> -->
+
+            </tr>
+            <tr>
+                <th>3コマ目</th>
+                <td>ビジネス検定１</td>
+                <td>デッサン</td>
+                <td>JavaScript</td>
+                <td></td>
+                <td rowspan="2">クラブ活動</td>
+            </tr>
+            <tr>
+                <th>4コマ目</th>
+                <td colspan="4"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
